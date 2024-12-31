@@ -58,28 +58,32 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-
+    
+    // Networking - Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
 
-
+    // Room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp (libs.androidx.room.compiler)
 
+    // DI
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
 
+    // Lifecycle-runtime-ktx
     implementation(libs.androidx.runtime.livedata)
     implementation(libs.androidx.navigation.compose)
 
+    // Hilt Navigation
     implementation(libs.androidx.hilt.navigation.compose)
 
+    // Splashscreen
     implementation(libs.androidx.core.splashscreen)
 
-
+    // To check Memory leaks
     debugImplementation(libs.leakcanary.android)
 
 
