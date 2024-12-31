@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MrCooper" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.splashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_gray</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_mr</item>
+        <item name="postSplashScreenTheme">@style/Theme.MrCooper</item>
+    </style>
+</resources>
